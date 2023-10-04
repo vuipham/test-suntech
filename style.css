@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: auto;
+  min-height: 100vh;
+}
+
+.wrapper {
+  padding: 20px 30px;
+}
+
+.number-is-choosed {
+  padding: 0 160px;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 15px;
+  background-color: #8cc84c;
+  border-radius: 5px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+li {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  width: 40px;
+  background-color: #424141;
+  height: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 18px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.form-choose-number {
+  margin-top: 20px;
+}
+
+.numbers {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  width: 40px;
+  background-color: #424141;
+  height: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 18px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.numbers:hover {
+  background-color: #6c6b6b;
+}
+
+.number-list {
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px;
+  margin: 0 160px;
+  background-color: #c2d3eb;
+  border-radius: 5px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.close {
+  display: none;
+}
+.open {
+  display: flex;
+}
