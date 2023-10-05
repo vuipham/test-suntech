@@ -4,6 +4,7 @@ const myform = document.querySelector("form");
 var listNumber = document.getElementById("listNumber");
 const ul = document.getElementById("numbersChoosed");
 const btnSubmit = document.getElementById("btnSubmit");
+
 var tags = [];
 
 openFormBtn.onclick = function () {
