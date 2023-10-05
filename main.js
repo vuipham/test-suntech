@@ -1,4 +1,3 @@
-// Lấy các phần tử HTML bằng ID
 const openFormBtn = document.getElementById("toggleForm");
 const myform = document.querySelector("form");
 
@@ -15,7 +14,6 @@ function toggleForm(status) {
   myform.style.display = status;
 }
 
-// Hàm để xử lý sự kiện click vào thẻ span
 function addTagOnClick(event) {
   let spanElement = event.target;
   let tag = spanElement.textContent.trim();
@@ -23,11 +21,13 @@ function addTagOnClick(event) {
   if (tag != "" && !tags.includes(tag)) {
     tags.push(tag);
     changeColer(spanElement.id, "black", "yellow", "none", "not-allowed");
-    console.log(tags); // In mảng tags sau khi thêm tag mới
+    console.log(tags);
   }
+  tags = tags.sort(function (a, b) {
+    return a - b;
+  });
 }
 
-// Hàm để gắn sự kiện click vào tất cả các thẻ span từ 1 đến 50
 function attachClickEventsToSpans() {
   for (let i = 1; i <= 50; i++) {
     let spanId = "num_" + i;
@@ -46,7 +46,7 @@ function changeColer(spanId, color, backgroundColor, pointerEvents, cursor) {
 }
 
 function createTag() {
-  if (tags.length > 1) {
+  if (tags.length > 0) {
     ul.innerHTML = "";
   }
 
@@ -59,7 +59,6 @@ function createTag() {
   });
 }
 
-// Gọi hàm để gắn sự kiện click
 attachClickEventsToSpans();
 
 btnSubmit.onclick = function (event) {
